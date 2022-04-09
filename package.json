@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=FALSE cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -20,8 +20,5 @@
   },
   "engines": {
     "node": "16.5.0"
-  },
-  "devDependencies": {
-    "concurrently": "^6.2.1"
   }
 }
